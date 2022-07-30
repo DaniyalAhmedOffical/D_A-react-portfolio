@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { SiFiverr,SiUpwork } from "react-icons/si";
 
 const SocialLinks = () => {
   const links = [
@@ -38,6 +39,24 @@ const SocialLinks = () => {
       id: 4,
       child: (
         <>
+          Upwork <SiUpwork  size={30} />
+        </>
+      ),
+      href: "https://www.upwork.com/freelancers/~019aedfe62d9ddb065",
+    },
+    {
+      id: 5,
+      child: (
+        <>
+          Fiverr <SiFiverr  size={30} />
+        </>
+      ),
+      href: "https://www.fiverr.com/daniyalahmed111?up_rollout=true",
+    },
+    {
+      id: 6,
+      child: (
+        <>
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
@@ -45,6 +64,7 @@ const SocialLinks = () => {
       style: "rounded-br-md",
       download: true,
     },
+    
   ];
 
   return (
